@@ -18,10 +18,7 @@ public class VideoPlay : MonoBehaviour
        video360 = (MovieTexture)Sphere.GetComponent<Renderer>().material.mainTexture;
         video360.loop=true;
         video360.Play();
-        
-        /*MovieTexture video360_2 = (MovieTexture)Sphere2.GetComponent<Renderer>().material.mainTexture;
-        video360_2.loop=true;
-        video360_2.Play();*/
+
     }
 
     // Update is called once per frame
@@ -35,8 +32,7 @@ public class VideoPlay : MonoBehaviour
             MovieTexture video360_2 = (MovieTexture)Sphere2.GetComponent<Renderer>().material.mainTexture;
             video360_2.loop=true;
             video360_2.Play();
-            //Panel.color = GetRandomColor();
-            //Panel.color.a=1.0f;
+          
         } 
         
     }
