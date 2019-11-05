@@ -2,15 +2,20 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.Video;
 
 public class VideoPlay : MonoBehaviour
 {
     public GameObject Sphere;
     public GameObject Sphere2;
     public GameObject Camera;
-    public Image Panel;
-    public Image TempColor;
-    public float count;
+    public float increment;
+    public VideoPlayer[] video;
+    
+
+    private float count=0;
+    private double  duration;
+
      MovieTexture video360 ;
     // Start is called before the first frame update
     void Start()
@@ -19,15 +24,15 @@ public class VideoPlay : MonoBehaviour
         video360.loop=true;
         video360.Play();
         
-        /*MovieTexture video360_2 = (MovieTexture)Sphere2.GetComponent<Renderer>().material.mainTexture;
-        video360_2.loop=true;
-        video360_2.Play();*/
+     
     }
 
     // Update is called once per frame
     void Update()
     {
-        count -= 0.4f;
+        //duration = video[0].length;
+        //Debug.Log(duration);
+        count -= increment;
         Camera.transform.rotation=Quaternion.Euler(Camera.transform.rotation.x , Camera.transform.rotation.y + count ,transform.rotation.z );  
         if(Input.GetKeyDown(KeyCode.E)){
             video360.Stop();
@@ -35,8 +40,7 @@ public class VideoPlay : MonoBehaviour
             MovieTexture video360_2 = (MovieTexture)Sphere2.GetComponent<Renderer>().material.mainTexture;
             video360_2.loop=true;
             video360_2.Play();
-            //Panel.color = GetRandomColor();
-            //Panel.color.a=1.0f;
+          
         } 
         
     }
