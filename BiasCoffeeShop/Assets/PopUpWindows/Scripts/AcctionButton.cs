@@ -1,15 +1,25 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Video;
+using UnityEngine.SceneManagement;
 
 public class AcctionButton : MonoBehaviour
 {
     public Animator animator;
-    public Canvas canvas;
     public Animator Videoanimator;
+    public Animator ReplayVideo;
+    public VideoPlayer Video;
+    public string scene;
+    public float CountDown=1000f; 
+
+    private float Timer;
+    private float VideoTime=1000f;
+
     // Start is called before the first frame update
     void Start()
     {
+        
         
     }
 
@@ -19,22 +29,52 @@ public class AcctionButton : MonoBehaviour
         
     }
 
+    void FixedUpdate()
+    {
+        Timer+=Time.deltaTime;
+        CountDown= VideoTime- Timer;
+        CountDown=Mathf.Clamp(CountDown, 0, VideoTime);
+
+        if(CountDown<50)
+        {
+            ReplayVideo.SetBool("Active",true);
+        }
+
+    }
+
     public void OnTriggerEnter(Collider other)
-    {   
-        if(other.tag=="Player"){
-                        
+    {           
+        if(other.tag=="Player")
+        {                        
             animator.SetBool("Active", true);
         }
         
     }
 
     public void PlayVideo(){
+        VideoTime=(float)Video.length;
+        CountDown=VideoTime;
+        Timer=0;
         animator.SetBool("Active", false);
         Videoanimator.SetBool("DisplayVideo", true);
+        Video.Play();
     }
     
     public void CancelVideo(){
         animator.SetBool("Active", false);
+    }
+
+
+    public void ReviewVideo(){
+        ReplayVideo.SetBool("Active",false);
+        VideoTime=(float)Video.length;
+        Video.Stop();
+        Video.Play();
+        Timer=0;
+    }
+
+    public void NextEscene(){
+        SceneManager.LoadScene(scene);
     }
     
 }
