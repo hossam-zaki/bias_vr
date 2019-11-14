@@ -1,0 +1,16 @@
+{
+  "source": "Unity",
+  "applications": [
+    {
+      "app_key": "application.generated.unity.biascoffeeshop.exe",
+      "launch_type": "url",
+      "url": "steam://launch/",
+      "action_manifest_path": "/home/enrique/Documents/UnityProjects/bias_vr/BiasCoffeeShop/Assets/StreamingAssets/SteamVR/actions.json",
+      "strings": {
+        "en_us": {
+          "name": "BiasCoffeeShop [Testing]"
+        }
+      }
+    }
+  ]
+}
