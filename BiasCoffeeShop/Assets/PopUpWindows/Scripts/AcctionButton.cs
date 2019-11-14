@@ -12,6 +12,7 @@ public class AcctionButton : MonoBehaviour
     public VideoPlayer Video;
     public string scene;
     public float CountDown=1000f; 
+    public GameObject CoffeeShop;
 
     private float Timer;
     private float VideoTime=1000f;
@@ -58,6 +59,7 @@ public class AcctionButton : MonoBehaviour
         animator.SetBool("Active", false);
         Videoanimator.SetBool("DisplayVideo", true);
         Video.Play();
+        CoffeeShop.SetActive(false);
     }
     
     public void CancelVideo(){
@@ -66,11 +68,12 @@ public class AcctionButton : MonoBehaviour
 
 
     public void ReviewVideo(){
-        ReplayVideo.SetBool("Active",false);
+        
         VideoTime=(float)Video.length;
         Video.Stop();
         Video.Play();
         Timer=0;
+        ReplayVideo.SetBool("Active", false);
     }
 
     public void NextEscene(){
