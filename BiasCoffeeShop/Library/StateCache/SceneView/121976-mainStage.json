@@ -1,1 +1,5 @@
+<<<<<<< HEAD
 ﻿{"cameraMode":{"drawMode":0,"name":"Shaded","section":"Shading Mode"},"sceneLighting":false,"audioPlay":false,"sceneViewState":{"showFog":true,"showMaterialUpdate":false,"showSkybox":true,"showFlares":true,"showImageEffects":true,"showParticleSystems":true},"in2DMode":false,"pivot":{"x":59.97605895996094,"y":16.95005989074707,"z":53.9119873046875},"rotation":{"x":0.019725777208805085,"y":-0.9727708101272583,"z":0.21885749697685243,"w":0.07491064071655274},"size":61.294246673583987,"orthographic":false}
+=======
+﻿{"cameraMode":{"drawMode":0,"name":"Shaded","section":"Shading Mode"},"sceneLighting":false,"audioPlay":false,"sceneViewState":{"showFog":true,"showMaterialUpdate":false,"showSkybox":true,"showFlares":true,"showImageEffects":true,"showParticleSystems":true},"in2DMode":false,"pivot":{"x":-4.966741561889648,"y":10.506301879882813,"z":31.841480255126954},"rotation":{"x":-0.02593735232949257,"y":0.9470528364181519,"z":-0.3128874599933624,"w":-0.0685858279466629},"size":0.600055456161499,"orthographic":false}
+>>>>>>> vr
