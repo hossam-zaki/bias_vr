@@ -57,7 +57,7 @@ public class AcctionButton : MonoBehaviour
     }
 
     public void PlayVideo(){
-        Button.transform.position = new Vector3(transform.position.x, transform.position.y, 80f);
+        Button.transform.position = new Vector3(transform.position.x, transform.position.y, 500f);
         VideoTime=(float)Video.length;
         CountDown=VideoTime;
         Timer=0;

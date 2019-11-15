@@ -737,6 +737,12 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 99.284004, z: 0}
+--- !u!1 &908063817 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8320000234321788983, guid: 2a577814080bc75f4a733380bf0662e4,
+    type: 3}
+  m_PrefabInstance: {fileID: 8319584062744540751}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &939754434
 GameObject:
   m_ObjectHideFlags: 0
@@ -1359,6 +1365,10 @@ PrefabInstance:
       propertyPath: CoffeeShop
       value: 
       objectReference: {fileID: 784365474}
+    - target: {fileID: 1062051728, guid: 287cf367299d3a81a9deb37a915e1cbd, type: 3}
+      propertyPath: Button
+      value: 
+      objectReference: {fileID: 908063817}
     - target: {fileID: 1557716040, guid: 287cf367299d3a81a9deb37a915e1cbd, type: 3}
       propertyPath: m_IsActive
       value: 0
