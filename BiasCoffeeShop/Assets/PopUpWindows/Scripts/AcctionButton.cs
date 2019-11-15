@@ -13,14 +13,15 @@ public class AcctionButton : MonoBehaviour
     public string scene;
     public float CountDown=1000f; 
     public GameObject CoffeeShop;
-
+    public GameObject Button;
+    public GameObject CanvasExit;
     private float Timer;
     private float VideoTime=1000f;
 
     // Start is called before the first frame update
     void Start()
     {
-        
+        CanvasExit.SetActive(false);
         
     }
 
@@ -40,6 +41,9 @@ public class AcctionButton : MonoBehaviour
         {
             ReplayVideo.SetBool("Active",true);
         }
+        if(VideoTime/2 <= Timer){
+            //CanvasExit.SetActive(true);
+        }
 
     }
 
@@ -53,6 +57,7 @@ public class AcctionButton : MonoBehaviour
     }
 
     public void PlayVideo(){
+        Button.transform.position = new Vector3(transform.position.x, transform.position.y, 80f);
         VideoTime=(float)Video.length;
         CountDown=VideoTime;
         Timer=0;
@@ -60,6 +65,7 @@ public class AcctionButton : MonoBehaviour
         Videoanimator.SetBool("DisplayVideo", true);
         Video.Play();
         CoffeeShop.SetActive(false);
+        CanvasExit.SetActive(true);
     }
     
     public void CancelVideo(){
@@ -77,7 +83,14 @@ public class AcctionButton : MonoBehaviour
     }
 
     public void NextEscene(){
-        SceneManager.LoadScene(scene);
+        //SceneManager.LoadScene(scene);
+        SceneManager.LoadSceneAsync(scene);
+    }
+    public void ExitScene(){
+        SceneManager.LoadSceneAsync(scene);
+    }
+    public void Btn(){
+        animator.SetBool("Active", true);
     }
     
 }
