@@ -324,6 +324,25 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 1546178433}
   m_PrefabAsset: {fileID: 0}
+--- !u!95 &897501495
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 897501493}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 480caa10c0af44ffcad4798bca4cb96f, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!20 &1059344903 stripped
 Camera:
   m_CorrespondingSourceObject: {fileID: 6475507690986491048, guid: 342574537bd4093c6a57ca7ac8b0afd6,
@@ -968,6 +987,42 @@ PrefabInstance:
       propertyPath: m_Name
       value: Button
       objectReference: {fileID: 0}
+    - target: {fileID: 1062051728, guid: 287cf367299d3a81a9deb37a915e1cbd, type: 3}
+      propertyPath: animator
+      value: 
+      objectReference: {fileID: 559581650}
+    - target: {fileID: 1062051728, guid: 287cf367299d3a81a9deb37a915e1cbd, type: 3}
+      propertyPath: Videoanimator
+      value: 
+      objectReference: {fileID: 229225577}
+    - target: {fileID: 1062051728, guid: 287cf367299d3a81a9deb37a915e1cbd, type: 3}
+      propertyPath: ReplayVideo
+      value: 
+      objectReference: {fileID: 37773875}
+    - target: {fileID: 1062051728, guid: 287cf367299d3a81a9deb37a915e1cbd, type: 3}
+      propertyPath: Video
+      value: 
+      objectReference: {fileID: 82404952}
+    - target: {fileID: 1062051728, guid: 287cf367299d3a81a9deb37a915e1cbd, type: 3}
+      propertyPath: CoffeeShop
+      value: 
+      objectReference: {fileID: 897501493}
+    - target: {fileID: 1062051728, guid: 287cf367299d3a81a9deb37a915e1cbd, type: 3}
+      propertyPath: CanvasExit
+      value: 
+      objectReference: {fileID: 1730960135}
+    - target: {fileID: 1062051728, guid: 287cf367299d3a81a9deb37a915e1cbd, type: 3}
+      propertyPath: Button
+      value: 
+      objectReference: {fileID: 2001234042}
+    - target: {fileID: 1062051728, guid: 287cf367299d3a81a9deb37a915e1cbd, type: 3}
+      propertyPath: BiasCoffeeAnimator
+      value: 
+      objectReference: {fileID: 897501495}
+    - target: {fileID: 1062051728, guid: 287cf367299d3a81a9deb37a915e1cbd, type: 3}
+      propertyPath: scene
+      value: BIASCOFFEESHOP
+      objectReference: {fileID: 0}
     - target: {fileID: 4574776543769940930, guid: 287cf367299d3a81a9deb37a915e1cbd,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1038,33 +1093,5 @@ PrefabInstance:
       propertyPath: m_LocalPosition.z
       value: 0.21
       objectReference: {fileID: 0}
-    - target: {fileID: 1062051728, guid: 287cf367299d3a81a9deb37a915e1cbd, type: 3}
-      propertyPath: animator
-      value: 
-      objectReference: {fileID: 559581650}
-    - target: {fileID: 1062051728, guid: 287cf367299d3a81a9deb37a915e1cbd, type: 3}
-      propertyPath: Videoanimator
-      value: 
-      objectReference: {fileID: 229225577}
-    - target: {fileID: 1062051728, guid: 287cf367299d3a81a9deb37a915e1cbd, type: 3}
-      propertyPath: ReplayVideo
-      value: 
-      objectReference: {fileID: 37773875}
-    - target: {fileID: 1062051728, guid: 287cf367299d3a81a9deb37a915e1cbd, type: 3}
-      propertyPath: Video
-      value: 
-      objectReference: {fileID: 82404952}
-    - target: {fileID: 1062051728, guid: 287cf367299d3a81a9deb37a915e1cbd, type: 3}
-      propertyPath: CoffeeShop
-      value: 
-      objectReference: {fileID: 897501493}
-    - target: {fileID: 1062051728, guid: 287cf367299d3a81a9deb37a915e1cbd, type: 3}
-      propertyPath: CanvasExit
-      value: 
-      objectReference: {fileID: 1730960135}
-    - target: {fileID: 1062051728, guid: 287cf367299d3a81a9deb37a915e1cbd, type: 3}
-      propertyPath: Button
-      value: 
-      objectReference: {fileID: 2001234042}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 287cf367299d3a81a9deb37a915e1cbd, type: 3}

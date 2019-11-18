@@ -9,6 +9,7 @@ public class AcctionButton : MonoBehaviour
     public Animator animator;
     public Animator Videoanimator;
     public Animator ReplayVideo;
+    public Animator BiasCoffeeAnimator;
     public VideoPlayer Video;
     public string scene;
     public float CountDown=1000f; 
@@ -42,7 +43,7 @@ public class AcctionButton : MonoBehaviour
             ReplayVideo.SetBool("Active",true);
         }
         if(VideoTime/2 <= Timer){
-            //CanvasExit.SetActive(true);
+            CanvasExit.SetActive(true);
         }
 
     }
@@ -64,8 +65,9 @@ public class AcctionButton : MonoBehaviour
         animator.SetBool("Active", false);
         Videoanimator.SetBool("DisplayVideo", true);
         Video.Play();
-        CoffeeShop.SetActive(false);
-        CanvasExit.SetActive(true);
+        //CoffeeShop.SetActive(false);
+        //CanvasExit.SetActive(true);
+        BiasCoffeeAnimator.SetBool("BiasCoffeeActivate",true);
     }
     
     public void CancelVideo(){

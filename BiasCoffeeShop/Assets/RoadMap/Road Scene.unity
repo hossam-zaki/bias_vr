@@ -654,6 +654,25 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1649655552}
   m_PrefabAsset: {fileID: 0}
+--- !u!95 &784365476
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 784365474}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: ce17729acd74df9178b0cdb8cd59a33b, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &876275997
 GameObject:
   m_ObjectHideFlags: 0
@@ -1212,6 +1231,42 @@ PrefabInstance:
       propertyPath: m_Name
       value: Button Variant
       objectReference: {fileID: 0}
+    - target: {fileID: 1062051728, guid: 287cf367299d3a81a9deb37a915e1cbd, type: 3}
+      propertyPath: ReplayVideo
+      value: 
+      objectReference: {fileID: 1958601165}
+    - target: {fileID: 1062051728, guid: 287cf367299d3a81a9deb37a915e1cbd, type: 3}
+      propertyPath: Video
+      value: 
+      objectReference: {fileID: 1958601164}
+    - target: {fileID: 1062051728, guid: 287cf367299d3a81a9deb37a915e1cbd, type: 3}
+      propertyPath: Videoanimator
+      value: 
+      objectReference: {fileID: 1958601166}
+    - target: {fileID: 1062051728, guid: 287cf367299d3a81a9deb37a915e1cbd, type: 3}
+      propertyPath: animator
+      value: 
+      objectReference: {fileID: 1958601167}
+    - target: {fileID: 1062051728, guid: 287cf367299d3a81a9deb37a915e1cbd, type: 3}
+      propertyPath: CanvasExit
+      value: 
+      objectReference: {fileID: 518722390}
+    - target: {fileID: 1062051728, guid: 287cf367299d3a81a9deb37a915e1cbd, type: 3}
+      propertyPath: scene
+      value: Road Scene
+      objectReference: {fileID: 0}
+    - target: {fileID: 1062051728, guid: 287cf367299d3a81a9deb37a915e1cbd, type: 3}
+      propertyPath: CoffeeShop
+      value: 
+      objectReference: {fileID: 784365474}
+    - target: {fileID: 1062051728, guid: 287cf367299d3a81a9deb37a915e1cbd, type: 3}
+      propertyPath: Button
+      value: 
+      objectReference: {fileID: 908063817}
+    - target: {fileID: 1062051728, guid: 287cf367299d3a81a9deb37a915e1cbd, type: 3}
+      propertyPath: BiasCoffeeAnimator
+      value: 
+      objectReference: {fileID: 784365476}
     - target: {fileID: 4574776543769940930, guid: 287cf367299d3a81a9deb37a915e1cbd,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1265,11 +1320,6 @@ PrefabInstance:
     - target: {fileID: 4574776543769940930, guid: 287cf367299d3a81a9deb37a915e1cbd,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6395101074937424609, guid: 287cf367299d3a81a9deb37a915e1cbd,
-        type: 3}
-      propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6096935795091564791, guid: 287cf367299d3a81a9deb37a915e1cbd,
@@ -1337,39 +1387,12 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 137.23
       objectReference: {fileID: 0}
-    - target: {fileID: 1062051728, guid: 287cf367299d3a81a9deb37a915e1cbd, type: 3}
-      propertyPath: ReplayVideo
-      value: 
-      objectReference: {fileID: 1958601165}
-    - target: {fileID: 1062051728, guid: 287cf367299d3a81a9deb37a915e1cbd, type: 3}
-      propertyPath: Video
-      value: 
-      objectReference: {fileID: 1958601164}
-    - target: {fileID: 1062051728, guid: 287cf367299d3a81a9deb37a915e1cbd, type: 3}
-      propertyPath: Videoanimator
-      value: 
-      objectReference: {fileID: 1958601166}
-    - target: {fileID: 1062051728, guid: 287cf367299d3a81a9deb37a915e1cbd, type: 3}
-      propertyPath: animator
-      value: 
-      objectReference: {fileID: 1958601167}
-    - target: {fileID: 1062051728, guid: 287cf367299d3a81a9deb37a915e1cbd, type: 3}
-      propertyPath: CanvasExit
-      value: 
-      objectReference: {fileID: 518722390}
-    - target: {fileID: 1062051728, guid: 287cf367299d3a81a9deb37a915e1cbd, type: 3}
-      propertyPath: scene
-      value: Road Scene
-      objectReference: {fileID: 0}
-    - target: {fileID: 1062051728, guid: 287cf367299d3a81a9deb37a915e1cbd, type: 3}
-      propertyPath: CoffeeShop
-      value: 
-      objectReference: {fileID: 784365474}
-    - target: {fileID: 1062051728, guid: 287cf367299d3a81a9deb37a915e1cbd, type: 3}
-      propertyPath: Button
-      value: 
-      objectReference: {fileID: 908063817}
     - target: {fileID: 1557716040, guid: 287cf367299d3a81a9deb37a915e1cbd, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6395101074937424609, guid: 287cf367299d3a81a9deb37a915e1cbd,
+        type: 3}
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
@@ -1649,6 +1672,56 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 2.2896
       objectReference: {fileID: 0}
+    - target: {fileID: 5125604346596072946, guid: 4772c942cbca75810b5751ef47ae4b54,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 720938437}
+    - target: {fileID: 5125604346596072946, guid: 4772c942cbca75810b5751ef47ae4b54,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: ExitScene
+      objectReference: {fileID: 0}
+    - target: {fileID: 6284654910714498429, guid: 4772c942cbca75810b5751ef47ae4b54,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 720938437}
+    - target: {fileID: 6284654910714498429, guid: 4772c942cbca75810b5751ef47ae4b54,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: ReviewVideo
+      objectReference: {fileID: 0}
+    - target: {fileID: 6308848171833103940, guid: 4772c942cbca75810b5751ef47ae4b54,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 720938437}
+    - target: {fileID: 6308848171833103940, guid: 4772c942cbca75810b5751ef47ae4b54,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: NextEscene
+      objectReference: {fileID: 0}
+    - target: {fileID: 30913387607432229, guid: 4772c942cbca75810b5751ef47ae4b54,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 720938437}
+    - target: {fileID: 30913387607432229, guid: 4772c942cbca75810b5751ef47ae4b54,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: PlayVideo
+      objectReference: {fileID: 0}
+    - target: {fileID: 8237700401348559757, guid: 4772c942cbca75810b5751ef47ae4b54,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 720938437}
+    - target: {fileID: 8237700401348559757, guid: 4772c942cbca75810b5751ef47ae4b54,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: CancelVideo
+      objectReference: {fileID: 0}
     - target: {fileID: 4725734492396165857, guid: 4772c942cbca75810b5751ef47ae4b54,
         type: 3}
       propertyPath: m_LocalPosition.z
@@ -1818,56 +1891,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_AnchoredPosition.y
       value: 29
-      objectReference: {fileID: 0}
-    - target: {fileID: 5125604346596072946, guid: 4772c942cbca75810b5751ef47ae4b54,
-        type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
-      value: 
-      objectReference: {fileID: 720938437}
-    - target: {fileID: 5125604346596072946, guid: 4772c942cbca75810b5751ef47ae4b54,
-        type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: ExitScene
-      objectReference: {fileID: 0}
-    - target: {fileID: 6284654910714498429, guid: 4772c942cbca75810b5751ef47ae4b54,
-        type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
-      value: 
-      objectReference: {fileID: 720938437}
-    - target: {fileID: 6284654910714498429, guid: 4772c942cbca75810b5751ef47ae4b54,
-        type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: ReviewVideo
-      objectReference: {fileID: 0}
-    - target: {fileID: 6308848171833103940, guid: 4772c942cbca75810b5751ef47ae4b54,
-        type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
-      value: 
-      objectReference: {fileID: 720938437}
-    - target: {fileID: 6308848171833103940, guid: 4772c942cbca75810b5751ef47ae4b54,
-        type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: NextEscene
-      objectReference: {fileID: 0}
-    - target: {fileID: 30913387607432229, guid: 4772c942cbca75810b5751ef47ae4b54,
-        type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
-      value: 
-      objectReference: {fileID: 720938437}
-    - target: {fileID: 30913387607432229, guid: 4772c942cbca75810b5751ef47ae4b54,
-        type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: PlayVideo
-      objectReference: {fileID: 0}
-    - target: {fileID: 8237700401348559757, guid: 4772c942cbca75810b5751ef47ae4b54,
-        type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
-      value: 
-      objectReference: {fileID: 720938437}
-    - target: {fileID: 8237700401348559757, guid: 4772c942cbca75810b5751ef47ae4b54,
-        type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: CancelVideo
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4772c942cbca75810b5751ef47ae4b54, type: 3}
