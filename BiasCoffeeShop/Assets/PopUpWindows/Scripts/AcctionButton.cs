@@ -12,6 +12,7 @@ public class AcctionButton : MonoBehaviour
     public Animator BiasCoffeeAnimator;
     public VideoPlayer Video;
     public string scene;
+    public string nextscene;
     public float CountDown=1000f; 
     public GameObject CoffeeShop;
     public GameObject Button;
@@ -86,7 +87,7 @@ public class AcctionButton : MonoBehaviour
 
     public void NextEscene(){
         //SceneManager.LoadScene(scene);
-        SceneManager.LoadSceneAsync(scene);
+        SceneManager.LoadSceneAsync(nextscene);
     }
     public void ExitScene(){
         SceneManager.LoadSceneAsync(scene);

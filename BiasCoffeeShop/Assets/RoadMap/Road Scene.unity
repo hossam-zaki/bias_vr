@@ -1267,6 +1267,10 @@ PrefabInstance:
       propertyPath: BiasCoffeeAnimator
       value: 
       objectReference: {fileID: 784365476}
+    - target: {fileID: 1062051728, guid: 287cf367299d3a81a9deb37a915e1cbd, type: 3}
+      propertyPath: nextscene
+      value: BIASCOFFEESHOP
+      objectReference: {fileID: 0}
     - target: {fileID: 4574776543769940930, guid: 287cf367299d3a81a9deb37a915e1cbd,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1568,6 +1572,22 @@ PrefabInstance:
       propertyPath: m_LocalPosition.z
       value: -0.3538
       objectReference: {fileID: 0}
+    - target: {fileID: 400020, guid: 3eed8165b861f444cbb8fe297fefedd7, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0.37284687
+      objectReference: {fileID: 0}
+    - target: {fileID: 400020, guid: 3eed8165b861f444cbb8fe297fefedd7, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0.37284687
+      objectReference: {fileID: 0}
+    - target: {fileID: 400020, guid: 3eed8165b861f444cbb8fe297fefedd7, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: -63.644005
+      objectReference: {fileID: 0}
+    - target: {fileID: 400020, guid: 3eed8165b861f444cbb8fe297fefedd7, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: -90.00001
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3eed8165b861f444cbb8fe297fefedd7, type: 3}
 --- !u!1 &1908445562 stripped
@@ -1587,7 +1607,7 @@ MeshCollider:
   m_IsTrigger: 0
   m_Enabled: 0
   serializedVersion: 3
-  m_Convex: 1
+  m_Convex: 0
   m_CookingOptions: 14
   m_Mesh: {fileID: 4300004, guid: 3eed8165b861f444cbb8fe297fefedd7, type: 3}
 --- !u!1001 &1958601163
@@ -1722,6 +1742,16 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
       value: CancelVideo
       objectReference: {fileID: 0}
+    - target: {fileID: 3605736989271276304, guid: 4772c942cbca75810b5751ef47ae4b54,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -25.21
+      objectReference: {fileID: 0}
+    - target: {fileID: 3605736989271276304, guid: 4772c942cbca75810b5751ef47ae4b54,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -119.7
+      objectReference: {fileID: 0}
     - target: {fileID: 4725734492396165857, guid: 4772c942cbca75810b5751ef47ae4b54,
         type: 3}
       propertyPath: m_LocalPosition.z
@@ -1736,6 +1766,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_AnchoredPosition.y
       value: 5.9300003
+      objectReference: {fileID: 0}
+    - target: {fileID: 1137868208096265943, guid: 4772c942cbca75810b5751ef47ae4b54,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -31.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1137868208096265943, guid: 4772c942cbca75810b5751ef47ae4b54,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -121
       objectReference: {fileID: 0}
     - target: {fileID: 7710490199894099101, guid: 4772c942cbca75810b5751ef47ae4b54,
         type: 3}
@@ -1892,6 +1932,11 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: 29
       objectReference: {fileID: 0}
+    - target: {fileID: 7216940599081389200, guid: 4772c942cbca75810b5751ef47ae4b54,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4772c942cbca75810b5751ef47ae4b54, type: 3}
 --- !u!328 &1958601164 stripped
@@ -1929,6 +1974,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Player Variant
+      objectReference: {fileID: 0}
+    - target: {fileID: 6475507690986491048, guid: 342574537bd4093c6a57ca7ac8b0afd6,
+        type: 3}
+      propertyPath: far clip plane
+      value: 1000
       objectReference: {fileID: 0}
     - target: {fileID: 6475507690987005874, guid: 342574537bd4093c6a57ca7ac8b0afd6,
         type: 3}
