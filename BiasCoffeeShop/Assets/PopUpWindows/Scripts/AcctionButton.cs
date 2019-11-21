@@ -9,17 +9,21 @@ public class AcctionButton : MonoBehaviour
     public Animator animator;
     public Animator Videoanimator;
     public Animator ReplayVideo;
+    public Animator BiasCoffeeAnimator;
     public VideoPlayer Video;
     public string scene;
+    public string nextscene;
     public float CountDown=1000f; 
-
+    public GameObject CoffeeShop;
+    public GameObject Button;
+    public GameObject CanvasExit;
     private float Timer;
     private float VideoTime=1000f;
 
     // Start is called before the first frame update
     void Start()
     {
-        
+        CanvasExit.SetActive(false);
         
     }
 
@@ -39,6 +43,9 @@ public class AcctionButton : MonoBehaviour
         {
             ReplayVideo.SetBool("Active",true);
         }
+        if(VideoTime/2 <= Timer){
+            CanvasExit.SetActive(true);
+        }
 
     }
 
@@ -52,12 +59,16 @@ public class AcctionButton : MonoBehaviour
     }
 
     public void PlayVideo(){
+        Button.transform.position = new Vector3(transform.position.x, transform.position.y, 500f);
         VideoTime=(float)Video.length;
         CountDown=VideoTime;
         Timer=0;
         animator.SetBool("Active", false);
         Videoanimator.SetBool("DisplayVideo", true);
         Video.Play();
+        //CoffeeShop.SetActive(false);
+        //CanvasExit.SetActive(true);
+        BiasCoffeeAnimator.SetBool("BiasCoffeeActivate",true);
     }
     
     public void CancelVideo(){
@@ -66,15 +77,23 @@ public class AcctionButton : MonoBehaviour
 
 
     public void ReviewVideo(){
-        ReplayVideo.SetBool("Active",false);
+        
         VideoTime=(float)Video.length;
         Video.Stop();
         Video.Play();
         Timer=0;
+        ReplayVideo.SetBool("Active", false);
     }
 
     public void NextEscene(){
-        SceneManager.LoadScene(scene);
+        //SceneManager.LoadScene(scene);
+        SceneManager.LoadSceneAsync(nextscene);
+    }
+    public void ExitScene(){
+        SceneManager.LoadSceneAsync(scene);
+    }
+    public void Btn(){
+        animator.SetBool("Active", true);
     }
     
 }
