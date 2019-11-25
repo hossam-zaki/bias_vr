@@ -1622,6 +1622,12 @@ PrefabInstance:
       propertyPath: m_Name
       value: VideoSystem Variant
       objectReference: {fileID: 0}
+    - target: {fileID: 1487558173980450600, guid: 4772c942cbca75810b5751ef47ae4b54,
+        type: 3}
+      propertyPath: m_VideoClip
+      value: 
+      objectReference: {fileID: 32900000, guid: a8922c19d3c97d6fe94f8617d6594adf,
+        type: 3}
     - target: {fileID: 82956408374882527, guid: 4772c942cbca75810b5751ef47ae4b54,
         type: 3}
       propertyPath: m_LocalPosition.x
