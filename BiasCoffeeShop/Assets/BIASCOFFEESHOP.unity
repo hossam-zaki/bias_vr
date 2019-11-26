@@ -915,6 +915,26 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 1062051728}
+    - target: {fileID: 2811576762619071870, guid: 4772c942cbca75810b5751ef47ae4b54,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2811576762619071870, guid: 4772c942cbca75810b5751ef47ae4b54,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -65
+      objectReference: {fileID: 0}
+    - target: {fileID: 1040478655670531752, guid: 4772c942cbca75810b5751ef47ae4b54,
+        type: 3}
+      propertyPath: m_Text
+      value: This project is designed to show viewers a different perspective of situations
+        involving bias and policing. Our goal was to see how normal people - not actors
+        - respond when being placed in a scene with only basic instructions and no
+        lines. Our first scene is loosely based on a 2018 incident in a Philadelphia
+        Starbucks where two Black men were forcibly removed from the store by police
+        officers.
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4772c942cbca75810b5751ef47ae4b54, type: 3}
 --- !u!1001 &6475507691947163551
