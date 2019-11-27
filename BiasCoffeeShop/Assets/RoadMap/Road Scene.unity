@@ -1622,6 +1622,12 @@ PrefabInstance:
       propertyPath: m_Name
       value: VideoSystem Variant
       objectReference: {fileID: 0}
+    - target: {fileID: 1487558173980450600, guid: 4772c942cbca75810b5751ef47ae4b54,
+        type: 3}
+      propertyPath: m_VideoClip
+      value: 
+      objectReference: {fileID: 32900000, guid: 387df9e08b4d5bf6ca50541085fc1dd2,
+        type: 3}
     - target: {fileID: 82956408374882527, guid: 4772c942cbca75810b5751ef47ae4b54,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1902,6 +1908,11 @@ PrefabInstance:
       propertyPath: m_LocalScale.y
       value: 1.27
       objectReference: {fileID: 0}
+    - target: {fileID: 2811576762619071870, guid: 4772c942cbca75810b5751ef47ae4b54,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 14
+      objectReference: {fileID: 0}
     - target: {fileID: 182526765485621863, guid: 4772c942cbca75810b5751ef47ae4b54,
         type: 3}
       propertyPath: m_LocalPosition.z
@@ -1936,6 +1947,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_IsActive
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1040478655670531752, guid: 4772c942cbca75810b5751ef47ae4b54,
+        type: 3}
+      propertyPath: m_Text
+      value: Our second scene is based on a traffic stop on a road in the mountains.
+      objectReference: {fileID: 0}
+    - target: {fileID: 1040478655670531752, guid: 4772c942cbca75810b5751ef47ae4b54,
+        type: 3}
+      propertyPath: m_FontData.m_FontSize
+      value: 24
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4772c942cbca75810b5751ef47ae4b54, type: 3}
